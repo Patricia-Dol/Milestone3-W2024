@@ -1,4 +1,13 @@
-﻿using System.Security.Cryptography;
+﻿/*Course: 		Web Programming 3
+* Assessment: 	Milestone 3
+* Created by: 	Patricia Dolecki - 2152819
+* Date: 		13 November 2024
+* Class Name: 	HomeController.cs
+* Description: 	It the class that hash the password to improve security
+* Time Task B):	2 hours. 
+*/
+
+using System.Security.Cryptography;
 
 namespace HPlusSport.Security.Web.Classes;
 
