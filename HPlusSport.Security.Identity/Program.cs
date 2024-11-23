@@ -72,6 +72,12 @@ namespace HPlusSport.Security.Identity
                 app.UseHsts();
             }
 
+            app.Use(async (context, next) =>
+            {
+                context.Response.Headers.Append("X-Content-Type-Options", "nonsniff");
+                await next.Invoke();
+            });
+
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
