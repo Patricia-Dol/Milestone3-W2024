@@ -1,3 +1,12 @@
+/*Course: 		Web Programming 3
+* Assessment: 	Milestone 3
+* Created by: 	Patricia Dolecki - 2152819
+* Date: 		22 November 2024
+* Class Name: 	Program.cs
+* Description: 	This is where the connection to the db is made and where all of the settings are located
+* Time Task B):	2h.
+*/
+
 using HPlusSport.Security.Identity.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
@@ -18,8 +27,8 @@ namespace HPlusSport.Security.Identity
             });
             */
 
-            // Add services to the container.
-            builder.Services.AddEndpointsApiExplorer();
+// Add services to the container.
+builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
             var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
