@@ -11,6 +11,13 @@ namespace HPlusSport.Security.Identity
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            /*
+            builder.WebHost.UseKestrel(options =>
+            {
+                options.AddServerHeader = false;
+            });
+            */
+
             // Add services to the container.
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
